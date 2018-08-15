@@ -1,13 +1,13 @@
 //
-//  Filters.hpp
+//  ATK_Filters.hpp
 //  libraryBuilding
 //
 //  Created by Institute of Digital Intermedia Arts on 7/17/17.
 //
 //
 
-#ifndef Filters_hpp
-#define Filters_hpp
+#ifndef ATK_Filters_hpp
+#define ATK_Filters_hpp
 
 #include <stdio.h>
 #include "ATKSettings.hpp"
@@ -53,6 +53,8 @@ public:
                 return currentSample;
                 break;
         }
+
+        return 0.0f;
     }
     
     void setBandwidth(float newBandwidth){

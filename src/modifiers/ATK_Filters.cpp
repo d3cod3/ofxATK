@@ -1,9 +1,9 @@
 //
-//  Filters.cpp
+//  ATK_Filters.cpp
 //  libraryBuilding
 //
 //  Created by Institute of Digital Intermedia Arts on 7/17/17.
 //
 //
 
-#include "Filters.hpp"
+#include "ATK_Filters.hpp"

@@ -13,7 +13,7 @@
 #include <ofMain.h>
 #include <ofxPortSF.hpp>
 #include <ATKSettings.hpp>
-#include <Interpolation.hpp>
+#include <ATK_Interpolation.hpp>
 
 class SoundFile{
     

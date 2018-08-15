@@ -12,7 +12,7 @@
 #include <stdio.h>
 #include "AudioFFT.h"
 #include "ofMain.h"
-#include "Interpolation.hpp"
+#include "ATK_Interpolation.hpp"
 
 class Spectroscope{
     

@@ -1,13 +1,13 @@
 //
-//  Interpolation.hpp
+//  ATK_Interpolation.hpp
 //  libraryBuilding
 //
 //  Created by Aaron Anderson on 7/16/17.
 //
 //
 
-#ifndef Interpolation_hpp
-#define Interpolation_hpp
+#ifndef ATK_Interpolation_hpp
+#define ATK_Interpolation_hpp
 
 #include <stdio.h>
 #include "math.h"
@@ -38,4 +38,4 @@ inline float cubicInterp(float y0, float y1, float y2, float y3, float xPos){
     return (a*pow(x, 3)) + (b*pow(x, 2)) + (c*x) + d;
 };
 
-#endif /* Interpolation_hpp */
+#endif /* ATK_Interpolation_hpp */

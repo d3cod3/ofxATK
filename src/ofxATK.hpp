@@ -10,7 +10,7 @@
 #define ofxATK_hpp
 
 #include <stdio.h>
-#include "Filters.hpp"
+#include "ATK_Filters.hpp"
 #include "SoundPlayer.hpp"
 #include "Meters.hpp"
 #include "Noise.hpp"
@@ -23,7 +23,6 @@
 #include "CTEnvelope.hpp"
 #include "WavetableOscillators.hpp"
 #include "Miscellaneous.hpp"
-#include "Filters.hpp"
 #include "CombFilter.hpp"
 #include "AllPassFilter.hpp"
 #include "Reverb.hpp"

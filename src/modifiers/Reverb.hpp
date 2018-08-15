@@ -13,7 +13,7 @@
 #include "TapInTapOut.hpp"
 #include "CombFilter.hpp"
 #include "AllPassFilter.hpp"
-#include "Filters.hpp"
+#include "ATK_Filters.hpp"
 #include "ofMain.h"
 
 //a very simple shroeder-style digital reverb.

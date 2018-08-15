@@ -11,7 +11,7 @@
 #include <stdio.h>
 #include "BaseOscillator.hpp"
 #include "WavetableGeneration.hpp"
-#include "Interpolation.hpp"
+#include "ATK_Interpolation.hpp"
 
 
 //-------------------------------------------------------------------
@@ -51,11 +51,11 @@ private:
     float whichOctave(float _freq){//what tables should be drawn from
         if(_freq>sawTable->getLowFreqList()[9]){
             currentOctave = 9;
-            return 9.0;
+            return 9.0f;
         }
         if(_freq <= sawTable->getLowFreqList()[0]){
             currentOctave = 0;
-            return 0.0;
+            return 0.0f;
         }
         int index = 0;
         while(_freq > sawTable->getLowFreqList()[index]){
@@ -65,6 +65,8 @@ private:
                 index++;
             }
         }
+
+        return 0.0f;
     }
 };
 
