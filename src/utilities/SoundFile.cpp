@@ -36,13 +36,13 @@ void SoundFile::draw(int newX, int newY, int newWidth, int newHeight){
     ofSetColor(backgroundColor);
     ofDrawRectangle(x+1, y+1, width-2, height-2);
 
+    ofSetColor(255,220,110,120);
+    float skip = size/float(width);
+    for(int i = 0; i < width; i++){
+        ofDrawLine(i+x, (height*0.5)+y - (buffer[int(i*skip)]*(height*0.5)),i+x, ((height*0.5)+y) + (buffer[int(i*skip)]*(height*0.5)));
+    }
     
-//    float skip = size/float(width);
-//    for(int i = 0; i < width; i++){
-//        ofDrawLine(i+x, (height*0.5)+y,i+x, ((height*0.5)+y) + (buffer[int(i*skip)]*(height*0.5)));
-//    }
-    
-    ofPushStyle();
+    /*ofPushStyle();
     float cellWidth = width*0.62/drawResolution;
     ofNoFill();//just empty rectangels
     ofSetColor(220);
@@ -53,7 +53,7 @@ void SoundFile::draw(int newX, int newY, int newWidth, int newHeight){
         
         ofDrawRectangle(tempX + x, y+(height*0.5), cellWidth, cellSizes[i]*height);
     }
-    ofPopStyle();
+    ofPopStyle();*/
 }
 //--------------------------------------------------------------
 void SoundFile::load(){//load sound file with load dialog

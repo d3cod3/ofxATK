@@ -1,13 +1,13 @@
 //
-//  Noise.hpp
+//  ATK_Noise.hpp
 //  libraryBuilding
 //
 //  Created by Aaron Anderson on 7/16/17.
 //
 //
 
-#ifndef Noise_hpp
-#define Noise_hpp
+#ifndef ATK_Noise_hpp
+#define ATK_Noise_hpp
 
 #include <stdio.h>
 #include "ofMain.h"

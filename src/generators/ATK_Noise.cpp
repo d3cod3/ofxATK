@@ -1,12 +1,12 @@
 //
-//  Noise.cpp
+//  ATK_Noise.cpp
 //  libraryBuilding
 //
 //  Created by Aaron Anderson on 7/16/17.
 //
 //
 
-#include "Noise.hpp"
+#include "ATK_Noise.hpp"
 
 
 int PinkNoise::findTable(int index){

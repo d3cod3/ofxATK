@@ -13,7 +13,7 @@
 #include "ATK_Filters.hpp"
 #include "SoundPlayer.hpp"
 #include "Meters.hpp"
-#include "Noise.hpp"
+#include "ATK_Noise.hpp"
 #include "Windows.hpp"
 #include "Spectroscope.hpp"
 #include "TrivialOscillators.hpp"
