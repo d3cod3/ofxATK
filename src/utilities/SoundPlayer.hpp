@@ -24,6 +24,7 @@ public:
         interpolation = LINEAR;
         phase = startPosition;
         phaseInc = 0;
+        _sampleRate = 44100;
         
         isPlaying = false;
         autoDuckTime = 20;//ms
@@ -35,6 +36,8 @@ public:
     void play(float speed);
     void setSpeed(float speed);
     void setLocation(float location);//0 - 1;
+
+    void setSampleRate(int sr) { _sampleRate = sr; }
     
     void process();//for consistency
     float getSample(){
@@ -64,6 +67,9 @@ private:
     SoundFile* reference;
     bool loopEnabled, isPlaying;
     int loopMode;
+
+    int _sampleRate;
+
     enum loopModes{
         STANDARD,//begining to end, immediately back to beginning
         PALINDROME,//beginning to end to beginning to end etc

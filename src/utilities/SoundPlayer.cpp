@@ -13,18 +13,18 @@
 
 //--------------------------------------------------------------
 void SoundPlayer::play(){
-    phaseInc = reference->getSFSR()/ATKSettings::sampleRate;
+    phaseInc = reference->getSFSR()/_sampleRate;
     isPlaying = true;
 }
 //--------------------------------------------------------------
 void SoundPlayer::play(float speed){
-    phaseInc = (reference->getSFSR()*speed)/ATKSettings::sampleRate;
+    phaseInc = (reference->getSFSR()*speed)/_sampleRate;
     isPlaying = true;
     //cout << ATKSettings::sampleRate << " " <<  reference->getSFSR() << endl;
 }
 //--------------------------------------------------------------
 void SoundPlayer::setSpeed(float speed){
-    phaseInc = (reference->getSFSR()*speed)/ATKSettings::sampleRate;
+    phaseInc = (reference->getSFSR()*speed)/_sampleRate;
 }
 //--------------------------------------------------------------
 void SoundPlayer::setLocation(float location){

@@ -36,7 +36,7 @@ void SoundFile::draw(int newX, int newY, int newWidth, int newHeight){
     ofSetColor(backgroundColor);
     ofDrawRectangle(x+1, y+1, width-2, height-2);
 
-    ofSetColor(255,220,110,120);
+    ofSetColor(255,255,120,255);
     float skip = size/float(width);
     for(int i = 0; i < width; i++){
         ofDrawLine(i+x, (height*0.5)+y - (buffer[int(i*skip)]*(height*0.5)),i+x, ((height*0.5)+y) + (buffer[int(i*skip)]*(height*0.5)));
